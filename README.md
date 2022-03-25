@@ -11,10 +11,6 @@
     - VSCode-win-x64-YY：vscode portableをここに配置する．YYはバージョンである．
     - console.bat：python-XXにパスが通ったcmdを開く．
     - vscode.bat：codeフォルダを作業フォルダとしたVSCodeを開く
-- できること
-  - 配布後，追加でモジュールをインストールする
-  - 配布後，追加でVSCodeの拡張機能を追加する
-  - デバッグ
 
 ### 1. embedded pythonをダウンロードする
 
