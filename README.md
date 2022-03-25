@@ -53,12 +53,12 @@ python.exe get-pip.py
 1. ダウンロードしたembedded pythonと同じバージョンのpythonをインストールする
 1. `tkinter系`のフォルダやファイルを`python-XX`直下にコピーする
   - インストールしたpythonフォルダのLibの中にある以下をコピーする
-  　- tkinterフォルダ
-  　- tclフォルダ
+    - tkinterフォルダ
+    - tclフォルダ
   - インストールしたpythonフォルダのDLLsの中にある以下をコピーする
-  　- _tkinter.pyd
-  　- tcl86t.dll（バージョンによって数字などは違う）
-  　- tk86t.dll（バージョンによって数字などは違う）
+    - _tkinter.pyd
+    - tcl86t.dll（バージョンによって数字などは違う）
+    - tk86t.dll（バージョンによって数字などは違う）
   - おまけ：`pythonXX._path`にパスを追加するなら，DLLsフォルダに配置しても良い
 
 ### 6. モジュールをインストールする
@@ -133,9 +133,9 @@ exit/b
 
 1. バッチファイル`vscode.bat`を利用してVSCodeを起動する
 1. 例えば，以下のような拡張機能をインストールする
-　- Python (これらも付いてくるJupyter, Pylance)
-　- Japanese Lang Pack
-　- Evillnspector
+  - Python (これらも付いてくるJupyter, Pylance)
+  - Japanese Lang Pack
+  - Evillnspector
 
 ### 11. VSCodeの設定を調整する
 
