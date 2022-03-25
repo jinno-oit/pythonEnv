@@ -84,6 +84,7 @@ python -m pip install [module]
 
 ### 9. インストールフォルダ`py22`直下に`console.bat`と`vscode.bat`を配置する
 
+- 参考：https://hituji-ws.com/code/python/python-emb-usage/
 - `console.bat`
 ```bash
 @echo off
