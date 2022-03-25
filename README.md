@@ -201,9 +201,8 @@ exit/b
 
 ### 12. 7zipを利用してインストールファイルを作成する
 
-1. py22の中身を全選択してpy22.7zに固める
-  - フォルダを選択して固めると展開時にパスが変わり，失敗する
-1. 作業フォルダに以下を配置する
+- py22の中身を全選択してpy22.7zに固める（フォルダを選択して固めると展開時にパスが変わり，失敗する）
+- 作業フォルダに以下を配置する
   - py22.7z
   - config.txt
 ```bash
@@ -217,8 +216,8 @@ BeginPrompt="install python+vscode to C:\\work\\py22"
   - 7zSD.sfx（バージョンによって動かなかった．調査中）
     - https://www.7-zip.org/sdk.html
 　  - 中身から探す
-1. cmdで作業フォルダに移動し，以下のコマンドでexe化する
+- cmdで作業フォルダに移動し，以下のコマンドでexe化する
 ```cmd
 copy /b 7zSD.sfx + config.txt + py22.7z py22_installer.exe
 ```
-1. `py22_installer.exe`というインストールファイルができる
+- `py22_installer.exe`というインストールファイルができる
