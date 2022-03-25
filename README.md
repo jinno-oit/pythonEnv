@@ -5,12 +5,12 @@
   - `C:\\work\\py22`
     - Windows11などで，あらゆるフォルダがOneDriveと共有されている危険があるためCドライブ直下に配置する
 - フォルダ構成
-  - py22
-    - code：プログラムは全てここに配置する．vscodeの設定もここへ配置する．
-    - python-XX：embedded pythonをここに配置する．XXはバージョンである．
-    - VSCode-win-x64-YY：vscode portableをここに配置する．YYはバージョンである．
-    - console.bat：python-XXにパスが通ったcmdを開く．
-    - vscode.bat：codeフォルダを作業フォルダとしたVSCodeを開く
+  - `py22`
+    - `code`：プログラムは全てここに配置する．vscodeの設定もここへ配置する．
+    - `python-XX`：embedded pythonをここに配置する．XXはバージョンである．
+    - `VSCode-win-x64-YY`：vscode portableをここに配置する．YYはバージョンである．
+    - `console.bat`：python-XXにパスが通ったcmdを開く．
+    - `vscode.bat`：codeフォルダを作業フォルダとしたVSCodeを開く
 
 ### 1. embedded pythonをダウンロードする
 
