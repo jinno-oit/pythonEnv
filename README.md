@@ -47,14 +47,14 @@ python.exe get-pip.py
 
 参考：https://qiita.com/Neilus/items/17b44d737d5acd1982fb
 1. ダウンロードしたembedded pythonと同じバージョンのpythonをインストールする
-1. `tkinter系`のフォルダやファイルを`python-XX`直下にコピーする
+1. tkinter系のフォルダやファイルを`python-XX`直下にコピーする
   - インストールしたpythonフォルダのLibの中にある以下をコピーする
-    - tkinterフォルダ
-    - tclフォルダ
+    - `tkinter`フォルダ
+    - `tcl`フォルダ
   - インストールしたpythonフォルダのDLLsの中にある以下をコピーする
-    - _tkinter.pyd
-    - tcl86t.dll（バージョンによって数字などは違う）
-    - tk86t.dll（バージョンによって数字などは違う）
+    - `_tkinter.pyd`
+    - `tcl86t.dll`（バージョンによって数字などは違う）
+    - `tk86t.dll`（バージョンによって数字などは違う）
   - おまけ：`pythonXX._path`にパスを追加するなら，DLLsフォルダに配置しても良い
 
 ### 6. モジュールをインストールする
