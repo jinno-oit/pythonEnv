@@ -210,9 +210,10 @@ InstallPath="C:\\work\\py22"
 BeginPrompt="install python+vscode to C:\\work\\py22"
 ;!@InstallEnd@!
 ```
-  - 7zSD.sfx（バージョンによって動かなかった．調査中）
+  - 7zSD.sfx
     - https://www.7-zip.org/sdk.html
-　  - 中身から探す
+    - 中身から探す
+    - 2021バージョンではうまく行かなかった．2019バージョンが良い？（調査中）
 - cmdで作業フォルダに移動し，以下のコマンドでexe化する
 ```cmd
 copy /b 7zSD.sfx + config.txt + py22.7z py22_installer.exe
