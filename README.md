@@ -146,31 +146,23 @@ exit/b
         "*.ipynb": "jupyter.notebook.ipynb"
     },
     "python.analysis.extraPaths": [
-        "C:\\work\\py22\\python-XX\\Lib\\site-packages",
+        "C:\\oit\\py22\\python-3.9.11-embed-amd64\\Lib\\site-packages",
         ".\\*"
     ],
-    "python.defaultInterpreterPath": "C:\\work\\py22\\python-XX\\python.exe",
+    "python.defaultInterpreterPath": "C:\\oit\\py22\\python-3.9.11-embed-amd64\\python.exe",
     "terminal.integrated.profiles.windows": {
         "Command Prompt": {
             "path": "${env:windir}\\system32\\cmd.exe",
             "args": [
                 "/k",
-                "C:\\work\\py22\\console.bat"
+                "C:\\oit\\py22\\console.bat"
             ]
-        }
+        },
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "update.enableWindowsBackgroundUpdates": false,
-    "update.mode": "none",
-    "update.showReleaseNotes": false,
-    "extensions.autoUpdate": false,
-    "extensions.autoCheckUpdates": false,
-    "extensions.ignoreRecommendations": true,
-    "python.autoUpdateLanguageServer": false,
-    "editor.parameterHints": false,
-    "editor.suggestSelection": "first",
-    "vsinstellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.zoomLevel": 1
+    "terminal.integrated.cwd": "${fileDirname}",
+    "python.languageServer": "Pylance",
+    "python.pipenvPath": "C:\\oit\\py22\\python-3.9.11-embed-amd64\\Scripts\\pip.exe"
 }
 ```
 - `launch.json`
@@ -182,19 +174,47 @@ exit/b
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "name": "Python: File Folder",
             "type": "python",
             "request": "launch",
+            "python": "${config:python.defaultInterpreterPath}",
             "program": "${file}",
-            "console": "integratedTerminal",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder};C:\\work\\py22\\python-XX"
-            }
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Work Folder",
+            "type": "python",
+            "request": "launch",
+            "python": "${config:python.defaultInterpreterPath}",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
         }
     ]
 }
 ```
-- ユーザ設定としたければ，`C:\\work\\py22\\VSCode-win32-YY\\data\\user-data\\User`こちらにも配置する
+- ユーザ設定として`C:\\work\\py22\\VSCode-win32-YY\\data\\user-data\\User`に以下を配置する
+  - `settings.json`
+```json
+{
+    "python.analysis.extraPaths": [
+        "C:\\oit\\py22\\python-3.9.11-embed-amd64\\Lib\\site-packages",
+        ".\\*"
+    ],
+    "python.pythonPath": "C:\\oit\\py22\\python-3.9.11-embed-amd64\\python.exe",
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.mode": "none",
+    "update.showReleaseNotes": false,
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": false,
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "material-icon-theme"
+}
+```
 
 ### 12. 7zipを利用してインストールファイルを作成する
 
